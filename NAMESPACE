@@ -1,0 +1,45 @@
+## base backages
+importFrom("stats", coef, family, fitted, model.matrix, nobs,
+           residuals, terms, vcov, weights)
+
+## Recommended packages
+importFrom("lme4", findbars, fixef, nobars, ranef, sigma,
+           subbars, VarCorr)
+
+## Exports
+export(mhglm)
+export(mhglm.control)
+export(mhglm.fit)
+export(fixef)
+export(fixef.mhglm)
+export(firthglm.control)
+export(firthglm.fit)
+export(model.matrix.mhglm)
+export(predict.mhglm)
+export(ranef)
+export(ranef.mhglm)
+export(sigma)
+export(sigma.mhglm)
+export(terms.mhglm)
+export(VarCorr)
+export(VarCorr.mhglm)
+
+## Methods
+S3method(coef, mhglm)
+S3method(family, mhglm)
+S3method(fitted, mhglm)
+S3method(fixef, mhglm)
+S3method(model.frame, mhglm)
+S3method(model.matrix, mhglm)
+S3method(predict, mhglm)
+S3method(print, mhglm)
+S3method(print, summary.mhglm)
+S3method(print, VarCorr.mhglm)
+S3method(ranef, mhglm)
+S3method(residuals, mhglm)
+S3method(sigma, mhglm)
+S3method(summary, mhglm)
+S3method(terms, mhglm)
+S3method(VarCorr, mhglm)
+S3method(vcov, mhglm)
+S3method(weights, mhglm)
