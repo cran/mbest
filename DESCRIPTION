@@ -1,6 +1,6 @@
 Package: mbest
-Version: 0.3
-Date: 2015-04-20
+Version: 0.4
+Date: 2015-10-18
 Title: Moment-Based Estimation for Hierarchical Models
 Author: Patrick O. Perry
 Maintainer: Patrick O. Perry <pperry@stern.nyu.edu>
@@ -13,6 +13,6 @@ LazyData: Yes
 License: Apache License (== 2.0) | file LICENSE
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2015-04-20 06:13:45 UTC; ptrck
+Packaged: 2015-10-18 19:55:53 UTC; ptrck
 Repository: CRAN
-Date/Publication: 2015-04-20 17:51:07
+Date/Publication: 2015-10-19 08:41:57

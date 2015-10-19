@@ -1,6 +1,6 @@
-4459d51674f779a7f6a571692bfc3641 *DESCRIPTION
+4d2df0a62d5348f8df1e823140de20d5 *DESCRIPTION
 3b83ef96387f14655fc854ddc3c6bd57 *LICENSE
-d6e05ea6a0ce708793f8085df36de951 *NAMESPACE
+032ca73320f3a6381e84a7562f199760 *NAMESPACE
 24ff00fd09b5275927c49f3116938ba0 *R/backtrack.R
 464979eaa67cf7102f9bd59f6ecfaf1a *R/blindsearch.R
 d0e6a1ec1f038824817fb9cd6c078679 *R/dispersion.pooled.R
@@ -14,7 +14,6 @@ aac91ff3bb4ff458f095cb9e72a9c1aa *R/mhglm.fit.R
 86240cce63b7055fa965644ccfa7283c *R/moment.est.R
 8deb26749db9b249ad23880343dd8616 *R/rdglm.fit.R
 619dc363a8d27affa4a425d8f94b8b70 *R/rdglm.group.fit.R
-f0414be5ef0ef8b2bb9bac5f0823b9b4 *README.md
 29cf3658f87c6fc80aaa36468cef83d9 *inst/CITATION
 184307cbf196712c98d640496fe8f08d *inst/tests/firth-binomial1.rds
 7f52700fdee65c831bcfb3f066a4fee3 *inst/tests/firth-binomial10.rds
