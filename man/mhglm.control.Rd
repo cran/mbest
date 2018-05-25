@@ -1,5 +1,6 @@
 \name{mhglm.control}
 \alias{mhglm.control}
+\alias{mhglm_ml.control}
 \title{
 Auxiliary for Controlling Moment Heirarchical GLM Fitting
 }
@@ -9,8 +10,14 @@ internally by \code{\link{mhglm.fit}}, but may be used to construct a
 control argument to either function.
 }
 \usage{
-mhglm.control(standardize = TRUE, steps = 1, parallel = FALSE,
-              fit.method = "firthglm.fit", fit.control = list(...), ...)
+mhglm.control(standardize = TRUE, steps = 1, parallel = FALSE, diagcov = FALSE,
+        fit.method = "firthglm.fit", fixef.rank.warn = FALSE, cov.rank.warn = FALSE,
+        cov.psd.warn = TRUE, fit.control = list(...), ...)
+
+mhglm_ml.control(standardize = FALSE, steps = 1, parallel = FALSE, diagcov = FALSE,
+              fit.method = "firthglm.fit", fixef.rank.warn = FALSE, cov.rank.warn = FALSE,
+              cov.psd.warn = FALSE, fit.control = list(...), ...)
+
 }
 \arguments{
   \item{standardize}{
@@ -23,8 +30,21 @@ mhglm.control(standardize = TRUE, steps = 1, parallel = FALSE,
   \item{parallel}{
     fit the group-specific estimates in parallel rather than sequentially
 }
+  \item{diagcov}{
+    estimate random effect covairance matrix with diagonal approximation 
+}
   \item{fit.method}{
     method for obtaining group-specific effect estimates
+}
+  \item{fixef.rank.warn}{
+    if TRUE, print warnings when fixef is unidentifiable
+}
+  \item{cov.rank.warn}{
+    if TRUE, print warnings when covariance matrix is unidentifiable
+}
+  \item{cov.psd.warn}{
+    if TRUE, print warnings when moment based estimates of covariance matrix is 
+    not positive semi-definite
 }
   \item{fit.control}{
     control parameters for \code{fit.method}
@@ -37,6 +57,7 @@ mhglm.control(standardize = TRUE, steps = 1, parallel = FALSE,
 \details{
 Setting \code{standardize = TRUE} ensures that the procedure is equivariant,
 and generally leads to better estimation performance.
+Right now \code{standardize = TRUE} is not allowed for \code{mhglm_ml}.
 
 The \code{steps} argument gives the number of refinement steps for the moment
 based parameters.  In each step, the previous fixed effect and random effect
